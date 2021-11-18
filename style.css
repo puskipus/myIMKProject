@@ -1,8 +1,11 @@
+*{
+  margin: 0;
+  padding: 0;
+}
 body {
   background-color: #F4F4F4;
   background-size: cover;
-  margin: 0;
-  padding: 0;
+
 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -184,6 +187,14 @@ body {
 .aboutUs:hover {
   color: #CEE5D0;
   top: 16px;
+}
+.hero{
+  display: flex;
+}
+
+#hero-img{
+  width: 30vw;
+  height: 10vh;
 }
 
 /*========================================================================================================================*/
