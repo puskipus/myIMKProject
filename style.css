@@ -9,18 +9,8 @@ body {
   -o-background-size: cover;
 }
 
-#logo {
-  position: fixed;
-  width: 15vw;
-  height: 15vw;
-  max-width : 165.6px;
-	max-height: 154.8px;
-  margin: 0 auto;
-  font-size: 26px;
-  top: 12px;
-  left: 30px;
-  z-index: 999998;
-}
+/*BAGIAN HEADER*/
+/*========================================================================================================================*/
 
 .topBar {
   position: fixed;
@@ -28,7 +18,7 @@ body {
   overflow: hidden;
   top: 0;
   width: 100%;
-  height: 50px;
+  height: 80px;
   z-index: 999997;
 }
 
@@ -40,7 +30,7 @@ body {
   top: 50px;
   left: -100%;
   width: 100%;
-  height: 100%;
+  height: 130%;
   transition: 0.2s;
 }
 
@@ -58,3 +48,161 @@ body {
   font-size: 3vw;
   font-family: "Gill Sans MT Condensed", sans-serif;
 }
+
+.sidebar ul li {
+  list-style-type: none;
+}
+
+/*========================================================================================================================*/
+
+#logo {
+  position: fixed;
+  width: 4vw;
+  height: 4vw;
+  max-width: 10vw;
+  max-height: 10vw;
+  margin: 0 auto;
+  font-size: 26px;
+  margin-left: 6%;
+  top: 1%;
+  left: 1%;
+  z-index: 999998;
+}
+
+.home {
+  position: fixed;
+  color: #fff;
+  margin: 0 auto;
+  font-size: 26px;
+  top: 12px;
+  left: 35%;
+  z-index: 999998;
+  list-style-type: none;
+}
+
+.home:hover {
+  color: #CEE5D0;
+}
+
+.menu {
+  position: fixed;
+  color: #fff;
+  margin: 0 auto;
+  font-size: 22px;
+  top: 12px;
+  left: 45%;
+  text-decoration: none;
+  z-index: 999998;
+
+  font-family: "Gill Sans MT Condensed", sans-serif;
+}
+
+.menu:hover {
+  color: #CEE5D0;
+  top: 16px;
+}
+
+.menu a:active ~ .sidebar {
+  position: fixed;
+  background: #282A36;
+
+  padding-top: 10px;
+  top: 50px;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  transition: 0.2s;
+}
+
+.layanan {
+  position: fixed;
+  color: #fff;
+  margin: 0 auto;
+  font-size: 22px;
+  top: 12px;
+  left: 55%;
+  text-decoration: none;
+  z-index: 999998;
+
+  font-family: "Gill Sans MT Condensed", sans-serif;
+}
+
+.layanan:hover {
+  color: #CEE5D0;
+  top: 16px;
+}
+
+.promosi {
+  position: fixed;
+  color: #fff;
+  margin: 0 auto;
+  font-size: 22px;
+  top: 12px;
+  left: 65%;
+  text-decoration: none;
+  z-index: 999998;
+
+  font-family: "Gill Sans MT Condensed", sans-serif;
+}
+
+.promosi:hover {
+  color: #CEE5D0;
+  top: 16px;
+}
+
+.lokasi {
+  position: fixed;
+  color: #fff;
+  margin: 0 auto;
+  font-size: 22px;
+  top: 12px;
+  left: 75%;
+  text-decoration: none;
+  z-index: 999998;
+
+  font-family: "Gill Sans MT Condensed", sans-serif;
+}
+
+.lokasi:hover {
+  color: #CEE5D0;
+  top: 16px;
+}
+
+.aboutUs {
+  position: fixed;
+  color: #fff;
+  margin: 0 auto;
+  font-size: 22px;
+  top: 12px;
+  left: 85%;
+  text-decoration: none;
+  z-index: 999998;
+
+  font-family: "Gill Sans MT Condensed", sans-serif;
+}
+
+.aboutUs:hover {
+  color: #CEE5D0;
+  top: 16px;
+}
+
+/*========================================================================================================================*/
+
+/*BAGIAN FOOTER*/
+/*========================================================================================================================*/
+.bottomBar {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  min-height: 10px;
+  height: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background: #191919;
+  color: white;
+  z-index: 999997;
+  text-align: center;
+}
+
+/*========================================================================================================================*/
