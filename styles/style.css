@@ -223,5 +223,6 @@ body {
 .location-click{
   /* TODO */
   border: solid black  1px;
+  background-color: grey;
   padding: 10px;
 }
