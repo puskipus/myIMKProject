@@ -1,0 +1,5 @@
+const DATALOC = { /* agak maksa pake file js, but whatever, it works */
+  malang: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63219.14205790467!2d112.59676351412243!3d-7.978643878892538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd62822063dc2fb%3A0x78879446481a4da2!2sMalang%2C%20Malang%20City%2C%20East%20Java!5e0!3m2!1sen!2sid!4v1637421061503!5m2!1sen!2sid",
+  jogja: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126491.94284195552!2d110.30497659531484!3d-7.803244719696533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5787bd5b6bc5%3A0x21723fd4d3684f71!2sYogyakarta%2C%20Yogyakarta%20City%2C%20Special%20Region%20of%20Yogyakarta!5e0!3m2!1sen!2sid!4v1637652999655!5m2!1sen!2sid",
+  jakarta: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d507681.0290308802!2d106.55001755888456!3d-6.2296729587440955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e945e34b9d%3A0x5371bf0fdad786a2!2sJakarta!5e0!3m2!1sen!2sid!4v1637653825380!5m2!1sen!2sid",
+}
