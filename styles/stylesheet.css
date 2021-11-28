@@ -1,0 +1,519 @@
+@import url('http://fonts.cdnfonts.com/css/freshman');
+@import url('http://fonts.cdnfonts.com/css/nickainley');
+
+body {
+  background-color: #F4F4F4;
+  background-size : cover;
+  margin          : 0;
+  padding         : 0;
+
+  line-height    : 1.5;
+  font-family    : 'Inter', sans-serif;
+  text-decoration: none;
+
+  -webkit-background-size: cover;
+  -moz-background-size   : cover;
+  -o-background-size     : cover;
+}
+
+/*BAGIAN HEADER*/
+/*========================================================================================================================*/
+
+.topBar {
+  position  : sticky;
+  background: #EA5224;
+  overflow  : hidden;
+  top       : 0;
+  width     : 100%;
+  height    : 4vw;
+  z-index   : 999997;
+}
+
+.contentOfSidebar {
+  position  : fixed;
+  transition: 0.2s;
+}
+
+.sidebar a {
+  color              : #FFFFFF;
+  display            : block;
+  width              : 100%;
+  line-height        : 60px;
+  text-decoration    : none;
+  padding-left       : 40px;
+  box-sizing         : border-box;
+  transition-property: background;
+  transition-duration: 0.1s;
+
+  font-size  : 1vw;
+  font-family: "Inter", sans-serif;
+}
+
+.sidebar ul li {
+  list-style-type: none;
+}
+
+/*========================================================================================================================*/
+
+#logo {
+  /* position   : fixed; */
+  width           : 3.5vw;
+  height          : 3.5vw;
+  max-width       : 10vw;
+  max-height      : 10vw;
+  margin          : 0 auto;
+  font-size       : 26px;
+  margin-left     : 6vw;
+  top             : 1%;
+  left            : 1%;
+  z-index         : 999998;
+  border-radius   : 200px;
+  /* padding      : 20px; */
+  /* width        : 200px; */
+  /* height       : auto; */
+}
+
+.home {
+  position                                 : absolute;
+  color                                    : white;
+  font-size                                : 18px;
+  top                                      : 27.5%;
+  left                                     : 40vw;
+  text-decoration                          : none;
+  z-index                                  : 999998;
+  text-align                               : center;
+  border-radius                            : 200px;
+  padding                                  : 0px 35px 0px 35px;
+  background                               : black;
+  float                                    : none;
+  /* animation                             : example 20s infinite; */
+  /*animation-duration                     : 4s;*/
+}
+
+.home:hover {
+  color: #CEE5D0;
+}
+
+.menu {
+  position                                 : absolute;
+  color                                    : white;
+  font-size                                : 18px;
+  top                                      : 27.5%;
+  left                                     : 50vw;
+  text-decoration                          : none;
+  z-index                                  : 999998;
+  text-align                               : center;
+  border-radius                            : 200px;
+  padding                                  : 0px 35px 0px 35px;
+  background                               : black;
+  float                                    : none;
+  /* animation                             : example 20s infinite; */
+  /*animation-duration                     : 4s;*/
+}
+
+.menu:hover {
+  color   : #CEE5D0;
+  /* top  : 16px; */
+}
+
+.layanan {
+  position                                 : absolute;
+  color                                    : white;
+  font-size                                : 18px;
+  top                                      : 27.5%;
+  left                                     : 60vw;
+  text-decoration                          : none;
+  z-index                                  : 999998;
+  text-align                               : center;
+  border-radius                            : 200px;
+  padding                                  : 0px 35px 0px 35px;
+  background                               : black;
+  float                                    : none;
+  /* animation                             : example 20s infinite; */
+  /*animation-duration                     : 4s;*/
+}
+
+.layanan:hover {
+  color   : #CEE5D0;
+  /* top  : 16px; */
+}
+
+.promosi {
+  position                                 : absolute;
+  color                                    : white;
+  font-size                                : 18px;
+  top                                      : 27.5%;
+  left                                     : 70vw;
+  text-decoration                          : none;
+  z-index                                  : 999998;
+  text-align                               : center;
+  border-radius                            : 200px;
+  padding                                  : 0px 35px 0px 35px;
+  background                               : black;
+  float                                    : none;
+  /* animation                             : example 20s infinite; */
+  /*animation-duration                     : 4s;*/
+}
+
+.promosi:hover {
+  color   : #CEE5D0;
+  /* top  : 16px; */
+}
+
+.lokasi {
+  position                                 : absolute;
+  color                                    : white;
+  font-size                                : 18px;
+  top                                      : 27.5%;
+  left                                     : 80vw;
+  text-decoration                          : none;
+  z-index                                  : 999998;
+  text-align                               : center;
+  border-radius                            : 200px;
+  padding                                  : 0px 35px 0px 35px;
+  background                               : black;
+  float                                    : none;
+  /* animation                             : example 20s infinite; */
+  /*animation-duration                     : 4s;*/
+}
+
+.lokasi:hover {
+  color   : #CEE5D0;
+  /* top  : 16px; */
+}
+
+.aboutUs {
+  position                                 : absolute;
+  color                                    : white;
+  font-size                                : 18px;
+  top                                      : 27.5%;
+  left                                     : 90vw;
+  text-decoration                          : none;
+  z-index                                  : 999998;
+  text-align                               : center;
+  border-radius                            : 200px;
+  padding                                  : 0px 60px 0px 60px;
+  background                               : black;
+  float                                    : none;
+  /* animation                             : example 20s infinite; */
+  /*animation-duration                     : 4s;*/
+}
+
+.aboutUs:hover {
+  color   : #CEE5D0;
+  /* top  : 16px; */
+}
+
+/*========================================================================================================================*/
+
+/*BAGIAN MAIN*/
+/*========================================================================================================================*/
+
+/* HERO SECTION & BAGIAN ABOUT RINGKAS ===================================================================================*/
+.heroLeft {
+  float           : left;
+  background-color: red;
+  width           : 35vw;
+  height          : 500px;
+  overflow        : hidden;
+}
+
+.titleHero {
+  text-align : center;
+  font-weight: bold;
+  font-size  : 1.875vw;
+  padding    : 1vw;
+}
+
+.taglineHero {
+  text-align: center;
+  font-size : 1.25vw;
+  padding   : 1vw;
+}
+
+.heroRight {
+  height          : 500px;
+  background-color: greenyellow;
+  overflow        : hidden;
+}
+
+.fotoHero {
+  /* position: absolute; */
+  width   : 927px;
+  /* height  : 494px; */
+  left    : 513px;
+  top     : 81px;
+
+}
+
+/*========================================================================================================================*/
+
+.mainContentTitle {
+  font-style : normal;
+  font-weight: bold;
+  font-size  : 1.5vw;
+  line-height: 36px;
+  text-align : center;
+  color      : #000000;
+}
+
+.containerMenu {
+  display: flex;
+
+  /* Properti lainnya */
+  max-width          : 80%;
+  /* width           : 800px; */
+  /* height          : auto; */
+  left               : 50px;
+  right              : 50px;
+  /* background-color: #11C5C6; */
+  /* border          : 2px solid black; */
+  padding            : 20px;
+  border-radius      : 10px;
+  margin             : 0 auto;
+  margin-bottom      : 2vw;
+}
+
+.boxMenu {
+  flex-grow             : 1;
+  padding               : 1%;
+  max-width             : 33.3%;
+  /* properti lainnya */
+  /* background-color   : #FBDD1C; */
+  margin                : 5px;
+  /* border             : 2px solid black; */
+  /* border-radius      : 10px; */
+  flex-grow             : 1;
+}
+
+.layanan1Foto {
+  display      : block;
+  margin-left  : auto;
+  margin-right : auto;
+  width        : 100%;
+  height       : auto;
+  margin-bottom: 1.5vw;
+
+  /* min-width : 3px; */
+  /* min-height: 4px; */
+
+  /* max-width      : 300px; */
+  /* max-height     : 400px; */
+  justify-content: center;
+}
+
+.layanan1Title {
+  text-align : center;
+  font-weight: bold;
+  font-size  : 1.5vw;
+}
+
+.layanan1Info {
+  text-align: justify;
+  font-size : 1.25vw;
+}
+
+.layanan2Foto {
+  display      : block;
+  margin-left  : auto;
+  margin-right : auto;
+  width        : 100%;
+  height       : auto;
+  margin-bottom: 1.5vw;
+
+  /* min-width : 3px;
+  min-height: 4px;
+
+  max-width      : 300px;
+  max-height     : 400px; */
+  justify-content: center;
+}
+
+.layanan2Title {
+  text-align : center;
+  font-weight: bold;
+  font-size  : 1.5vw;
+}
+
+.layanan2Info {
+  text-align: justify;
+  font-size : 1.25vw;
+}
+
+.layanan3Foto {
+  display      : block;
+  margin-left  : auto;
+  margin-right : auto;
+  width        : 100%;
+  height       : auto;
+  margin-bottom: 1.5vw;
+
+  /* min-width : 3px;
+  min-height: 4px;
+
+  max-width      : 300px;
+  max-height     : 400px; */
+  justify-content: center;
+}
+
+.layanan3Title {
+  text-align : center;
+  font-weight: bold;
+  font-size  : 1.5vw;
+}
+
+.layanan3Info {
+  text-align: justify;
+  font-size : 1.25vw;
+}
+
+.button {
+  text-align             : center;
+  color                  : black;
+  /* border              : 2px solid black; */
+  border-radius          : 20px;
+  box-shadow             : 0px 4px #888888;
+  margin                 : 10px 20px 10px 20px;
+  line-height            : 3vw;
+  background             : #fff;
+  bottom                 : 0 auto;
+  font-size              : 1.25vw;
+  text-decoration        : none;
+  /*animation            : example 20s infinite;*/
+  /*animation-duration   : 4s;*/
+}
+
+.button:hover {
+  background   : grey;
+  color        : white;
+  outline-color: green;
+  /*animation  : example 1s infinite;*/
+}
+
+.backButton {
+  position     : absolute;
+  width        : 4vw;
+  height       : 4vw;
+  top          : 48vw;
+  right        : 2vw;
+  z-index      : 999998;
+  background   : wheat;
+  border       : 5px solid wheat;
+  border-radius: 50px;
+  margin       : 2vw auto;
+}
+
+/*========================================================================================================================*/
+
+/*BAGIAN FOOTER*/
+/*========================================================================================================================*/
+
+#logoFooter {
+  z-index      : 999998;
+  border-radius: 200px;
+  padding      : 20px;
+  width        : 10vw;
+  height       : auto;
+}
+
+.titleFooter {
+  color      : white;
+  font-size  : 1.5vw;
+  font-weight: bold;
+}
+
+.containerFooter {
+  max-width: 1170px;
+  margin   : auto;
+}
+
+.rowFooter {
+  display  : flex;
+  flex-wrap: wrap;
+}
+
+ul {
+  list-style: none;
+}
+
+.bottomBar {
+  background-color: #24262b;
+  padding         : 70px 0;
+}
+
+.footer-col {
+  width  : 25%;
+  padding: 0 15px;
+}
+
+.footer-col h4 {
+  font-size     : 18px;
+  color         : #ffffff;
+  text-transform: capitalize;
+  margin-bottom : 35px;
+  font-weight   : 500;
+  position      : relative;
+}
+
+.footer-col h4::before {
+  content         : '';
+  position        : absolute;
+  left            : 0;
+  bottom          : -10px;
+  background-color: #e91e63;
+  height          : 2px;
+  box-sizing      : border-box;
+  width           : 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  font-size      : 16px;
+  text-transform : capitalize;
+  color          : #ffffff;
+  text-decoration: none;
+  font-weight    : 300;
+  color          : #bbbbbb;
+  display        : block;
+  transition     : all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color       : #ffffff;
+  padding-left: 8px;
+}
+
+.footer-col .social-links a {
+  display         : inline-block;
+  height          : 40px;
+  width           : 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin          : 0 10px 10px 0;
+  text-align      : center;
+  line-height     : 40px;
+  border-radius   : 50%;
+  color           : #ffffff;
+  transition      : all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+  color           : #24262b;
+  background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px) {
+  .footer-col {
+    width        : 50%;
+    margin-bottom: 30px;
+  }
+}
+
+@media(max-width: 574px) {
+  .footer-col {
+    width: 100%;
+  }
+}
