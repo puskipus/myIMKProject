@@ -1,0 +1,160 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.header{
+  width: 100%;
+  height: 80px;
+  display: block;
+  background: #EA5224;
+}
+
+.innerHeader{
+  width: 1300px;
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+  /* background-color: green; */
+}
+
+.logoContainer{
+  height: 100%;
+  display: table;
+  float: left;
+  /* background-color: green; */
+}
+
+.logoContainer h1 a{
+  color: inherit;
+}
+
+.logoContainer h1{
+  color: white;
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  font-family: "Montserrat";
+  font-size: 32px;
+  font-weight: 200;
+}
+
+.logoContainer h1 span{
+  font-weight: 800;
+}
+
+.navigation{
+  float: right;
+  height: 100%;
+}
+
+.navigation a{
+  height: 100%;
+  display: table;
+  float: left;
+  padding: 0px 30px;
+}
+
+.navigation a:last-child{
+  padding-right: 0;
+}
+
+.navigation a li{
+  display: table-cell;
+  vertical-align: middle;
+  font-weight: bold;
+  height: 100%;
+  font-family: "Inter";
+  font-size: 16px;
+  color: white;
+}
+
+.heading1{
+  font-weight: bolder;
+  font-family: "Inter";
+  text-align: center;
+  font-weight: 1000px;
+  padding-top: 60px;
+  padding-bottom: 70px;
+  font-size: 30px;
+}
+
+.box{
+  margin: 0 auto;
+  height: 850px;
+  width: 1150px;
+  /* background: red; */
+  display: block;
+}
+
+.kategori{
+  height: 100%;
+  float: left;
+}
+
+.kategori a{
+  color: white;
+  padding: 30px;
+}
+
+.kategori a li {
+  width: 200px;
+  height: 40px;
+  background-color: #FF9A60;
+  text-align: center;
+  font-family: "Inter";
+  font-size: 18px;
+  border-radius: 100px;
+  color: white;
+  padding: 10px;
+}
+
+.row1::after{
+  content: "";
+  display: table;
+}
+
+.column {
+  float: right;
+  width: auto;
+  padding: 20px;
+  padding-left: 50px;
+}
+
+.footer{
+  width: 100%;
+  height: 300px;
+  background-color: #191919;
+}
+
+.innerFooter{
+  height: 100%;
+  width: 1300px;
+  /* background-color: green; */
+  display: block;
+  margin: 0 auto;
+}
+
+.sosmed{
+  float: right;
+  vertical-align: middle;
+  display: table-row;
+  height: 100%;
+  padding-right: 200px;
+}
+
+.sosmed li{
+  height: 100%;
+  padding: 30px;
+}
+
+.sosmed li a{
+  font-weight: normal;
+  height: 100%;
+  font-family: "Inter";
+  font-size: 16px;
+  color: white;
+}

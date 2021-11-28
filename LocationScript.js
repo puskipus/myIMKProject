@@ -9,7 +9,6 @@ const locs = document.getElementsByClassName("location-click");
 const mapIfr = document.getElementById("gmap");
 
 
-
 const cabangs = (i) => {
   switch (i) {
     case 0:
