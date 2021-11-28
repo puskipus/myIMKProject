@@ -10,6 +10,7 @@ const mapIfr = document.getElementById("gmap");
 
 const selValues = document.getElementById("list-lokasi");
 
+
 const assignSelect = () => {
   selValues.onchange = () => {
     mapIfr.src = cabangs(selValues.options.selectedIndex);
