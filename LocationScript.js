@@ -8,6 +8,14 @@ const UNSEL_COLOR = "grey";
 const locs = document.getElementsByClassName("location-click");
 const mapIfr = document.getElementById("gmap");
 
+const selValues = document.getElementById("list-lokasi");
+
+
+const assignSelect = () => {
+  selValues.onchange = () => {
+    mapIfr.src = cabangs(selValues.options.selectedIndex);
+  };
+};
 
 const cabangs = (i) => {
   switch (i) {
@@ -29,18 +37,19 @@ const handleColor = (locs, idx) => {
   }
 };
 
-const assignClick = () => {
+const assignClickSubpage = () => {
   locs[0].style.backgroundColor = SEL_COLOR;
   for (let i = 0; i < locs.length; i++) {
     locs[i].onclick = () => {
       mapIfr.src = cabangs(i);
-      handleColor(locs,i);
+      handleColor(locs, i);
     };
   }
 };
 
 const mnFunc = () => {
-  assignClick();
+  assignSelect();
+  assignClickSubpage();
 };
 
 mnFunc();
