@@ -1,6 +1,15 @@
 @import url('http://fonts.cdnfonts.com/css/freshman');
 @import url('http://fonts.cdnfonts.com/css/nickainley');
 
+:root{
+  --salmon-cream  : #FF9A60;
+  --white-cream   : #FEE5C1;
+  --pink          : #EE7D81;
+  --black         : #191919;
+  --salmon-red    : #EA5224;
+  
+}
+
 body {
   background-color: #F4F4F4;
   background-size : cover;
@@ -401,6 +410,37 @@ body {
   border       : 5px solid wheat;
   border-radius: 50px;
   margin       : 2vw auto;
+}
+
+/* bagian maps*/
+
+select{
+  /* appearance: none; */
+  text-align: center;
+  font-size: 2vw;
+  background-color: var(--salmon-red);
+  border: none;
+  /* color: var(--white-cream); */
+  color: #FAFAFA;
+  border-radius: 15px;
+  padding: 15px 10px;
+}
+
+/* map */
+
+.map{
+  padding-left: 10%;
+}
+
+.lokasi-section{
+  display: flex;
+  margin: 10px;
+}
+
+@media only screen and (max-width: 768px){
+  .lokasi-section{
+    display: block;
+  }
 }
 
 /*========================================================================================================================*/

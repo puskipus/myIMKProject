@@ -5,11 +5,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,800" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+    <link rel="stylesheet" href="../styles/rework.css">
     <title>Lokasi kami</title>
 </head>
 
 <body>
+    <!-- header -->
+
+      <div class="header">
+        <div class="logoContainer">
+          <h1><a href="../index.html">SUSHI</a><span><a href="../index.html">MANTAP</a></span></h1>
+        </div>
+        <ul class="navigation">
+          <a class="home" href="../index.html"><li>Home</li></a>
+          <a class="menu" href="menu.html"><li>Menu</li></a>
+          <a class="layanan" href="layanan.html"><li>Layanan</li></a>
+          <a class="promosi" href="layanan.html"><li>Promosi</li></a>
+          <a class="lokasi" href="lokasi.html"><li>Lokasi</li></a>
+          <a class="aboutUs" href="aboutUs.html"><li>About Us</li></a>
+        </ul>
+      </div>
+
+      <div class="lokasi-headings">
+          <h1>TEMUKAN KAMI DI SINI</h1>
+      </div>
+
     <div class="map-div" style="display: flex;">
         <div class="locationClickDivs">
             <div class="location-click" id="loc-1">
@@ -24,7 +46,7 @@
                 <h2>3</h2>
             </div>
         </div>
-        <div>
+        <div class="map-div">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63219.14205790467!2d112.59676351412243!3d-7.978643878892538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd62822063dc2fb%3A0x78879446481a4da2!2sMalang%2C%20Malang%20City%2C%20East%20Java!5e0!3m2!1sen!2sid!4v1637421061503!5m2!1sen!2sid"
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" id="gmap"></iframe>
