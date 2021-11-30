@@ -7,6 +7,15 @@
   box-sizing: border-box;
 }
 
+:root{
+  --salmon-cream  : #FF9A60;
+  --white-cream   : #FEE5C1;
+  --pink          : #EE7D81;
+  --black         : #191919;
+  --salmon-red    : #EA5224;
+}
+
+
 /* body */
 body{
 	display: flex;
@@ -92,9 +101,9 @@ body{
 
 /* todo maps */
 
-.map-div{
+.map-selection{
 	height:50vh;
-	border: solid 2px black;
+	border: solid 2px var(--black);
 }
 
 /* #gmap{
