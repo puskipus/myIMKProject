@@ -1,0 +1,391 @@
+body {
+  background-color: #F4F4F4;
+  background-size : cover;
+  margin          : 0;
+  padding         : 0;
+
+  line-height    : 1.5;
+  font-family    : 'Inter', sans-serif;
+  text-decoration: none;
+
+  -webkit-background-size: cover;
+  -moz-background-size   : cover;
+  -o-background-size     : cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*BAGIAN HEADER*/
+/*========================================================================================================================*/
+
+.topBar {
+  display: flex;
+}
+
+.header {
+  display    : flex;
+  align-items: center;
+  width      : 100vw;
+  background : #EA5224;
+}
+
+.logoContainer {
+  height      : 100%;
+  padding-left: 13.5vw;
+
+  display        : flex;
+  align-self     : center;
+  justify-content: center;
+}
+
+.logoContainer h1 {
+  color         : white;
+  height        : 100%;
+  display       : table-cell;
+  vertical-align: middle;
+  font-family   : "Montserrat";
+  font-size     : 1.6vw;
+  font-weight   : 200;
+}
+
+.logoContainer h1 span {
+  font-weight: 800;
+}
+
+.logoContainer h1 a {
+  color: inherit;
+}
+
+.navigation {
+  display   : flex;
+  align-self: center;
+  float     : left;
+}
+
+.navigation a {
+  height : 100%;
+  padding: 0px 30px;
+}
+
+.navigation a:last-child {
+  padding-right: 10px;
+}
+
+.navigation a li {
+  text-align : center;
+  height     : 100%;
+  font-family: "Inter";
+  font-size  : 0.8vw;
+  color      : white;
+
+}
+
+#home {
+  margin-left: 25vw;
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    display: block;
+  }
+
+  .logoContainer {
+    height : 100%;
+    padding: 0;
+
+    display        : flex;
+    align-self     : center;
+    justify-content: center;
+  }
+
+  .logoContainer h1 {
+    color         : white;
+    height        : 100%;
+    display       : table-cell;
+    vertical-align: middle;
+    font-family   : "Montserrat";
+    font-size     : 3vw;
+    font-weight   : 200;
+  }
+
+  .navigation {
+    display: block;
+    float  : none;
+  }
+
+  .navigation a li {
+    text-align     : center;
+    justify-content: center;
+    height         : 100%;
+    font-family    : "Inter";
+    font-size      : 3vw;
+    color          : white;
+    margin-right   : 8vw;
+  }
+}
+
+/*========================================================================================================================*/
+
+/*BAGIAN MAIN*/
+/*========================================================================================================================*/
+
+.mainContentTitle {
+  font-style : normal;
+  font-weight: bold;
+  font-size  : 2vw;
+  line-height: 2vw;
+  text-align : center;
+  color      : #000000;
+}
+
+.containerMenu {
+  display      : flex;
+  max-width    : 80%;
+  left         : 50px;
+  right        : 50px;
+  padding      : 0px 20px 20px 20px;
+  border-radius: 10px;
+  margin       : 0 auto;
+  margin-bottom: 2vw;
+}
+
+.boxMenu {
+  flex-grow: 1;
+  padding  : 0 1% 1% 1%;
+  max-width: 33.3%;
+  margin   : 5px;
+  flex-grow: 1;
+}
+
+.freshIngredientsFoto {
+  display        : block;
+  margin-left    : auto;
+  margin-right   : auto;
+  width          : 100%;
+  height         : auto;
+  min-width      : 24.166666666666668vw;
+  min-height     : 20.0578125vw;
+  margin-bottom  : 1.5vw;
+  justify-content: center;
+}
+
+.freshIngredientsTitle {
+  text-align : center;
+  font-weight: bold;
+  font-size  : 1.5vw;
+}
+
+.freshIngredientsInfo {
+  text-align: justify;
+  font-size : 1.25vw;
+}
+
+.backButton {
+  position     : absolute;
+  width        : 4vw;
+  height       : 4vw;
+  bottom       : 0vw;
+  right        : 3vw;
+  z-index      : 999998;
+  background   : wheat;
+  border       : 1vw solid wheat;
+  border-radius: 50px;
+  margin       : 2vw auto;
+}
+
+@media (max-width: 768px) {
+  .mainContentTitle {
+    font-style : normal;
+    font-weight: bold;
+    font-size  : 4vw;
+    line-height: 36px;
+    text-align : center;
+    color      : #000000;
+  }
+
+  .containerMenu {
+    flex-direction: column;
+    max-width     : 80%;
+    left          : 50px;
+    right         : 50px;
+    padding       : 20px;
+    border-radius : 10px;
+    margin        : 0 auto;
+    margin-bottom : 2vw;
+  }
+
+  .boxMenu {
+    flex-grow: 1;
+    padding  : 1%;
+    max-width: 100%;
+    margin   : 5px;
+    flex-grow: 1;
+  }
+
+  .freshIngredientsFoto {
+    display        : block;
+    margin-left    : auto;
+    margin-right   : auto;
+    width          : 100%;
+    height         : auto;
+    margin-bottom  : 1.5vw;
+    justify-content: center;
+  }
+
+  .freshIngredientsTitle {
+    text-align : center;
+    font-weight: bold;
+    font-size  : 3vw;
+  }
+
+  .layananInfo {
+    text-align: justify;
+    font-size : 2vw;
+  }
+}
+
+/*========================================================================================================================*/
+
+/*BAGIAN FOOTER*/
+/*========================================================================================================================*/
+.bottomBar {
+  width           : auto;
+  height          : auto;
+  background-color: #24262b;
+  padding         : 2vw 4vw 0vw;
+}
+
+.titleFooter {
+  color      : white;
+  font-size  : 2vw;
+  font-weight: bold;
+}
+
+.containerFooter {
+  display: flex;
+  padding: 5vw 0;
+}
+
+.subContainerFooter {
+  flex     : 1;
+  font-size: 1.25vw;
+}
+
+@media (max-width: 768px) {
+  .containerFooter {
+    flex-direction: column;
+    text-align    : center;
+
+  }
+
+  .logoFooter {
+    display: none;
+  }
+}
+
+.logoFooter {
+  width           : 15vw;
+  height          : auto;
+  border-radius   : 5vw;
+  text-align      : center;
+  background-color: #888888;
+  z-index         : 999998;
+}
+
+.logoFooter h1 {
+  color      : white;
+  height     : 100%;
+  font-family: "Montserrat";
+  font-size  : 1.6vw;
+  font-weight: 200;
+}
+
+.logoFooter h1 span {
+  font-weight: 800;
+}
+
+.logoFooter :hover {
+  color     : red;
+  transition: all 0.5s ease;
+}
+
+.menuSubContainerFooters ul {
+  list-style-type: none;
+}
+
+.menuSubContainerFooters a {
+  height     : 20vw;
+  width      : 20vw;
+  text-align : center;
+  line-height: 40px;
+  color      : white;
+  transition : all 0.5s ease;
+  box-sizing : border-box;
+  font-weight: bold;
+}
+
+.subContainerFooter .menuSubContainerFooters a:hover {
+  color: red;
+}
+
+.menuSubContainerFooters ul li i {
+  height: 3vw;
+  width : 3vw;
+
+  background-color: #bbb;
+  border-radius   : 50%;
+  display         : inline-block;
+
+  vertical-align: middle;
+  text-align    : center;
+  position      : relative;
+  display       : table-cell;
+}
+
+#iconFooter {
+  top  : 1vw;
+  right: 0.5vw;
+}
+
+@media (max-width: 768px) {
+  .bottomBar {
+    /* display        : flex; */
+    align-self     : center;
+    justify-content: center;
+  }
+
+  .containerFooter {
+    flex-direction: column;
+    text-align    : center;
+  }
+
+  .logoFooter {
+    display: none;
+  }
+
+  .titleFooter {
+    display        : flex;
+    align-self     : center;
+    justify-content: center;
+    color          : white;
+    height         : 100%;
+    vertical-align : middle;
+    font-family    : "Montserrat";
+    font-size      : 5vw;
+    font-weight    : bold;
+  }
+
+  .menuSubContainerFooters ul {
+    list-style-type: none;
+    margin-right   : 8vw;
+    font-size      : 3vw;
+    font-weight    : 100;
+  }
+
+  #iconFooter {
+    top  : 0.5vw;
+    right: 0.5vw;
+  }
+}

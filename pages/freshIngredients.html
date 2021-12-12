@@ -8,13 +8,18 @@
     <title>SUSHI MANTAP - FRESH INGREDIENTS</title>
 
     <!-- FAVICON -->
-    <link href="#" rel="shorcut icon">
+    <link href="favicon-fix.png" rel="shorcut icon">
     <!-- CSS -->
-    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="stylesheet" href="styleFreshIngredients.css" />
+    <!-- JavaScript -->
+    <script src="jquery-3.5.1.min.js"></script>
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <!-- IMPORT FONT -->
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,800" rel="stylesheet">
+    <!-- IMPORT SLIDES -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 
 <body>
@@ -22,35 +27,35 @@
     <header class="topBar">
         <nav>
             <article>
-                <div class="contentOfSidebar">
-                    <img src="https://1.bp.blogspot.com/-tqNtRLLT2CM/YLWmgbg_G_I/AAAAAAAAIg8/2TKDFLfxYFsiitpGYoyFOlpQuWl686ONwCLcBGAsYHQ/s1080/logo-pdp.png"
-                        alt="Banteng nih bos" id="logo" />
-                    <ul>
-                        <li>
-                            <a href="landing.html" onclick="goToScroll('section1')" class="home">Home</a>
-                        </li>
+                <div class="header">
+                    <div class="logoContainer">
+                        <h1><a href="index.html">SUSHI</a><span><a href="index.html">MANTAP</a></span></h1>
+                    </div>
+                    <ul class="navigation" style="list-style-type: none;">
+                        <a id="home" href="index.html">
+                            <li>Home</li>
+                        </a>
 
-                        <li>
-                            <a href="#" onclick="goToScroll('section2')" class="menu">Menu</a>
-                        </li>
+                        <a href="menu.html">
+                            <li>Menu</li>
+                        </a>
 
-                        <li>
-                            <a href="layanan.html" onclick="goToScroll('section3')" class="layanan">Layanan</a>
-                        </li>
+                        <a href="layanan.html">
+                            <li>Layanan</li>
+                        </a>
 
-                        <li>
-                            <a href="#" onclick="goToScroll('section4')" class="promosi">Promosi</a>
-                        </li>
+                        <a href="layanan.html">
+                            <li>Promosi</li>
+                        </a>
 
-                        <li>
-                            <a href="#" onclick="goToScroll('section5')" class="lokasi">Lokasi</a>
-                        </li>
+                        <a href="lokasi.html">
+                            <li>Lokasi</li>
+                        </a>
 
-                        <li>
-                            <a href="#" onclick="goToScroll('section4')" class="aboutUs">About Us</a>
-                        </li>
+                        <a href="aboutUs.html">
+                            <li>About Us</li>
+                        </a>
                     </ul>
-                </div>
             </article>
         </nav>
     </header>
@@ -58,65 +63,64 @@
 
     <!-- main area start -->
     <main>
-        <div>
+        <div class="box" style="position: relative;">
             <p class="mainContentTitle">FRESH INGREDIENTS</p>
             <div class="containerMenu">
                 <div class="boxMenu">
-                    <img src="layanan1Foto.png" class="layanan1Foto">
-                    <div class="layanan1Title">Ikan Segar</div>
-                    <p class="layanan1Info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <img src="layanan1Foto.jpg" class="freshIngredientsFoto">
+                    <div class="freshIngredientsTitle">Ikan Segar</div>
+                    <p class="freshIngredientsInfo">Restauran kami menggunakan ikan pilihan sebagai bahan masakan. Ikan
+                        yang digunakan diambil langsung dari tempat budidaya dan disimpan di tempat khusus. Sehingga
+                        makanan yang disajikan tetap segar dan berkualitas.</p>
                 </div>
                 <div class="boxMenu">
-                    <img src="fresh2Foto.png" class="layanan2Foto">
-                    <div class="layanan2Title">Sayuran Segar</div>
-                    <p class="layanan2Info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <img src="fresh2Foto.jpg" class="freshIngredientsFoto">
+                    <div class="freshIngredientsTitle">Sayuran Segar</div>
+                    <p class="freshIngredientsInfo">Sayuran yang kami gunakan diambil dari perkebunan pilihan. Setiap
+                        sayuran yang digunakan dipilih terlebih dahulu agar bahan yang digunakan berkualitas dan bercita
+                        rasa tinggi.</p>
                 </div>
                 <div class="boxMenu">
-                    <img src="fresh3Foto.png" class="layanan3Foto">
-                    <div class="layanan3Title">Bumbu Berkualitas</div>
-                    <p class="layanan3Info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <img src="fresh3Foto.jpg" class="freshIngredientsFoto">
+                    <div class="freshIngredientsTitle">Bumbu Berkualitas</div>
+                    <p class="freshIngredientsInfo">Setiap masakan yang kami buat diracik dengan bumbu dari bahan yang
+                        berkualitas. Sehingga menambahkan cita rasa yang dapat menggugah selera.</p>
                 </div>
-                <a href="layanan.html"><img src="backButton.png"  class="backButton"></a>
+                <!-- <div class="boxMenu">
+                    <a href="layanan.html"><img src="backButton.png" class="backButton"></a>
+                </div> -->
             </div>
+            <a href="layanan.html"><img src="backButton.png" class="backButton"></a>
         </div>
     </main>
     <!-- main area end -->
 
     <!-- footer area start -->
     <footer class="bottomBar">
+        <div class="titleFooter">About Us</div>
         <div class="containerFooter">
-            <div class="titleFooter">About Us</div>
-            <div class="rowFooter">
-                <div class="footer-col">
-                    <!-- <h4>follow us</h4> -->
-                    <div class="social-links">
-                        <img src="https://1.bp.blogspot.com/-tqNtRLLT2CM/YLWmgbg_G_I/AAAAAAAAIg8/2TKDFLfxYFsiitpGYoyFOlpQuWl686ONwCLcBGAsYHQ/s1080/logo-pdp.png"
-                            id="logoFooter" />
-                    </div>
+            <div class="subContainerFooter">
+                <div class="logoFooter">
+                    <h1><a href="index.html">SUSHI</a><span><a href="index.html">MANTAP</a></span></h1>
                 </div>
-                <div class="footer-col">
-                    <!-- <h4>company</h4> -->
-                    <ul>
+            </div>
+            <div class="subContainerFooter">
+                <div class="menuSubContainerFooters">
+                    <ul style="margin-top: 2.5vw;">
                         <li><a href="#">Our Menu</a></li>
                         <li><a href="#">Location</a></li>
                         <li><a href="#">Terms of Use</a></li>
                         <li><a href="#">Privacy Policy</a></li>
                     </ul>
                 </div>
-                <div class="footer-col">
-                    <!-- <h4>follow us</h4> -->
-                    <div class="social-links">
-                        <ul>
-                            <li><a href="#"><i class="fab fa-instagram"></i>@sushimantap</a></li>
-                            <br>
-                            <li><a href="#"><i class="fab fa-facebook-f"></i>@sushimantap</a></li>
-                            <br>
-                            <li><a href="#"><i class="fab fa-twitter"></i>@sushimantap</a></li>
-                        </ul>
-                    </div>
+            </div>
+            <div class="subContainerFooter">
+                <div class="menuSubContainerFooters">
+                    <ul>
+                        <li><a href="#"><i class="fab fa-instagram" id="iconFooter"></i>@sushimantap</a></li>
+                        <li><a href="#"><i class="fab fa-facebook-f" id="iconFooter"></i>@sushimantap</a></li>
+                        <li><a href="#"><i class="fab fa-twitter" id="iconFooter"></i>@sushimantap</a></li>
+                    </ul>
                 </div>
             </div>
         </div>

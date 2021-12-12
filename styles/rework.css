@@ -15,7 +15,6 @@
   --salmon-red    : #EA5224;
 }
 
-
 /* body */
 body{
 	display: flex;
@@ -31,6 +30,8 @@ body{
   align-items: center;
   width: 100vw;
   background: #EA5224;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -56,7 +57,7 @@ body{
   display: table-cell;
   vertical-align: middle;
   font-family: "Montserrat";
-  font-size: 3vw;
+  font-size: 3vw+4vh;
   font-weight: 200;
 }
 
@@ -100,16 +101,57 @@ body{
 /* PREVIOUS TODO STOPS HERE */
 
 /* todo maps */
-
-.map-selection{
-	height:50vh;
-	border: solid 2px var(--black);
+.locationClickDivs{
+	border: solid 1px rgba(25,25,25,.2);
+	width: 25vw;
 }
 
-/* #gmap{
-	max-width: 100%;
-	height: auto;
-} */
+
+/* buat lokasi */
+
+.lokasi-headings{
+	margin:30px;
+}
+
+.location-click{
+  /* TODO */
+  border: solid 1px rgba(15, 15, 15, .2);
+  background-color: lightgrey;
+  /* padding: 2vw 4vw; */
+  padding: 20px;
+}
+
+
+.map-selection{
+	border: solid 1px rgba(25,25,25,.2);
+	width: 80vw;
+	margin: 20px;
+	/* padding: 0 10% 10% 0; */
+}
+
+.map-div{
+	width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+	.locationClickDivs{
+		width: auto;
+	}
+	.lokasi-headings{
+		font-size: 8pt;
+	}
+	.map-selection{
+		margin: 0;
+		flex-direction: column-reverse;
+	}
+}
+  
+
+
+#gmap{
+	display: block;
+	width: 100%;
+}
 
 /* end maps todo */
 
@@ -167,8 +209,9 @@ body{
 
 .footer{
   width: 100%;
-  height: 300px;
+  height: 30vh;
   background-color: #191919;
+  color: #FAFAFA;
 }
 
 .innerFooter{
@@ -200,11 +243,69 @@ body{
   color: white;
 }
 
-/* buat lokasi */
+/* form for book-bow */
 
-.location-click{
-  /* TODO */
-  border: solid black  1px;
-  background-color: grey;
-  padding: 10px;
+.form-title{
+  margin: 4vh;
+	text-transform: uppercase;
 }
+
+.book-now{
+	/* border: solid 2px black; */
+	max-width: 70vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.form-div{
+	display: flex;
+	width: 65vw;
+	margin: 15px 0;
+}
+
+.form-div>label{
+  display: flex;
+  align-items: center;
+	width: 15vw;
+}
+
+
+input[type=text],input[type=date],textarea,select{ /* forms */
+	width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 0;
+  background-color: #e5e5e5;
+  resize: none;
+}
+
+.form-div>select{
+  background-color: #e5e5e5;
+}
+
+input[type=submit]{
+  background-color: #2a9d8f;
+  border: 0;
+  color: #FAFAFA;
+  border-radius: 8px;
+  padding: 2vh 8vw;
+  cursor: pointer;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+input:focus,textarea:focus,select:focus{
+  outline-color: var(--salmon-red);
+}
+
+@media only screen and (max-width: 600px) {
+	.form-div{
+		flex-direction: column;
+	}
+}
+  
+
+/* footer rework */
+

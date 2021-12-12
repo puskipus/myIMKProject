@@ -6,15 +6,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Now</title>
-    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/rework.css">
 </head>
 
 <body>
     <!-- header here -->
-    <div class="form-header">
+    <div class="header">
+        <div class="logoContainer">
+            <h1><a href="../index.html">SUSHI</a><span><a href="../index.html">MANTAP</a></span></h1>
+        </div>
+        <ul class="navigation">
+            <a class="home" href="../index.html">
+                <li>Home</li>
+            </a>
+            <a class="menu" href="menu.html">
+                <li>Menu</li>
+            </a>
+            <a class="layanan" href="layanan.html">
+                <li>Layanan</li>
+            </a>
+            <a class="promosi" href="layanan.html">
+                <li>Promosi</li>
+            </a>
+            <a class="lokasi" href="lokasi.html">
+                <li>Lokasi</li>
+            </a>
+            <a class="aboutUs" href="aboutUs.html">
+                <li>About Us</li>
+            </a>
+        </ul>
+    </div>
+    <div class="form-title">
         <h1>book now</h1>
     </div>
-    <form action="">
+
+    <form action="" class="book-now">
 
         <div class="form-div">
             <label for="fullname">Full Name</label>
@@ -32,13 +58,18 @@
         </div>
 
         <div class="form-div">
-            <label for="email">Email</label>
+            <label for="email">Email
+            </label>
             <input type="text" name="email" id="email">
         </div>
 
         <div class="form-div">
             <label for="restaurant">Restaurant</label>
-            <input type="text" name="restaurant" id="restaurant">
+            <select name="restaurant" id="restaurant-list">
+                <option value="malang">Malang</option>
+                <option value="jogja">Yogyakarta</option>
+                <option value="jakarta">Jakarta</option>
+            </select>
         </div>
 
 
@@ -53,12 +84,19 @@
         </div>
 
         <div class="form-div">
-            <textarea name="comment" form="usrform">Enter text here...</textarea>
+            <label for="notes">Notes</label>
+            <textarea name="comment" form="usrform" placeholder="Enter text here..."></textarea>
         </div>
 
 
         <input type="submit" value="Submit">
     </form>
+    <script>
+        const form = document.querySelector(".book-now")
+            .addEventListener("submit", () => 
+                alert("Form submitted")
+            );
+    </script>
     <!-- footer here -->
 </body>
 

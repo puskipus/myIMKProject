@@ -3,7 +3,7 @@
 /* constant variables */
 
 const SEL_COLOR = "white";
-const UNSEL_COLOR = "grey";
+const UNSEL_COLOR = "lightgrey";
 
 const locs = document.getElementsByClassName("location-click");
 const mapIfr = document.getElementById("gmap");
@@ -52,8 +52,8 @@ const assignClickSubpage = () => {
 
 const mnFunc = () => {
     switch(currFile){
-        case "index.html" : assignSelect(); break;
         case "lokasi.html" : assignClickSubpage(); break;
+        default: assignSelect(); break;
     }
 };
 
