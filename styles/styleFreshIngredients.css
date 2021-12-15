@@ -20,111 +20,54 @@ a {
 /*BAGIAN HEADER*/
 /*========================================================================================================================*/
 
-.topBar {
-  display: flex;
-}
 
 .header {
-  display    : flex;
-  align-items: center;
-  width      : 100vw;
-  background : #EA5224;
+  overflow: hidden;
+  background-color: #EA5224;
+  padding: 20px;
+  box-shadow: 0 5px 30px 0 rgba(0,0,0,0.2);
 }
 
-.logoContainer {
-  height      : 100%;
-  padding-left: 13.5vw;
-
-  display        : flex;
-  align-self     : center;
-  justify-content: center;
+.header a{
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
 }
 
-.logoContainer h1 {
-  color         : white;
-  height        : 100%;
-  display       : table-cell;
-  vertical-align: middle;
-  font-family   : "Montserrat";
-  font-size     : 1.6vw;
-  font-weight   : 200;
-}
-
-.logoContainer h1 span {
-  font-weight: 800;
-}
-
-.logoContainer h1 a {
-  color: inherit;
-}
-
-.navigation {
-  display   : flex;
-  align-self: center;
-  float     : left;
-}
-
-.navigation a {
-  height : 100%;
-  padding: 0px 30px;
-}
-
-.navigation a:last-child {
-  padding-right: 10px;
-}
-
-.navigation a li {
-  text-align : center;
-  height     : 100%;
+.header-right a{
   font-family: "Inter";
-  font-size  : 0.8vw;
-  color      : white;
-
+  padding-left: 30px;
 }
 
-#home {
-  margin-left: 25vw;
+.header .logo{
+  font-family: "Montserrat";
+  font-size: 25px;
 }
 
-@media only screen and (max-width: 768px) {
-  .header {
+.logo span {font-weight: 800;}
+
+.header-right a:hover {color: #ddd;}
+
+.header-right {float: right;}
+
+@media screen and (max-width: 800px) {
+  header{text-align: center;}
+
+  .header a{
+    float: none;
     display: block;
   }
 
-  .logoContainer {
-    height : 100%;
-    padding: 0;
+  .header-right {float: none;}
 
-    display        : flex;
-    align-self     : center;
-    justify-content: center;
-  }
-
-  .logoContainer h1 {
-    color         : white;
-    height        : 100%;
-    display       : table-cell;
-    vertical-align: middle;
-    font-family   : "Montserrat";
-    font-size     : 3vw;
-    font-weight   : 200;
-  }
-
-  .navigation {
-    display: block;
-    float  : none;
-  }
-
-  .navigation a li {
-    text-align     : center;
-    justify-content: center;
-    height         : 100%;
-    font-family    : "Inter";
-    font-size      : 3vw;
-    color          : white;
-    margin-right   : 8vw;
-  }
+  .header-right a{padding: 7px;}
 }
+
 
 /*========================================================================================================================*/
 
