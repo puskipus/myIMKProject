@@ -1,0 +1,793 @@
+body {
+  background-color: #F4F4F4;
+  background-size : cover;
+  margin          : 0vw;
+  padding         : 0vw;
+
+  line-height    : 1.5;
+  font-family    : 'Inter', sans-serif;
+  text-decoration: none;
+
+  -webkit-background-size: cover;
+  -moz-background-size   : cover;
+  -o-background-size     : cover;
+}
+
+.box {
+  height: auto;
+  width : auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.dot {
+  height          : 15px;
+  width           : 15px;
+  margin          : 0 2px;
+  background-color: #bbb;
+  border-radius   : 50%;
+  display         : inline-block;
+  transition      : background-color 0.6s ease;
+}
+
+/*BAGIAN HEADER*/
+/*========================================================================================================================*/
+
+.header {
+  overflow        : hidden;
+  background-color: #EA5224;
+  padding         : 20px;
+  box-shadow      : 0 5px 30px 0 rgba(0, 0, 0, 0.2);
+}
+
+.header a {
+  float          : left;
+  color          : white;
+  text-align     : center;
+  padding        : 12px;
+  text-decoration: none;
+  font-size      : 18px;
+  line-height    : 25px;
+  border-radius  : 4px;
+}
+
+.header-right a {
+  font-family : "Inter";
+  padding-left: 30px;
+}
+
+.header .logo {
+  font-family: "Montserrat";
+  font-size  : 25px;
+}
+
+.logo span {
+  font-weight: 800;
+}
+
+.header-right a:hover {
+  color: #ddd;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 800px) {
+  header {
+    text-align: center;
+  }
+
+  .header a {
+    float  : none;
+    display: block;
+  }
+
+  .header-right {
+    float: none;
+  }
+
+  .header-right a {
+    padding: 7px;
+  }
+}
+
+/*========================================================================================================================*/
+
+/*BAGIAN MAIN*/
+/*========================================================================================================================*/
+
+/* HERO SECTION & BAGIAN ABOUT RINGKAS ===================================================================================*/
+.heroDivision {
+  display   : flex;
+  max-height: 46vw;
+}
+
+.heroLeft {
+  flex      : 1;
+  max-height: 46vw;
+}
+
+.titleHero {
+  text-align : center;
+  font-weight: bold;
+  font-size  : 2vw;
+  padding    : 11vw 1vw 0vw 1vw;
+}
+
+.taglineHero {
+  text-align: center;
+  font-size : 1.25vw;
+}
+
+.buttonHero {
+  text-align        : center;
+  color             : white;
+  border-radius     : 50px;
+  box-shadow        : 0px 0.25vw #888888;
+  margin            : 0vw 10vw 5vw;
+  line-height       : 4vw;
+  background        : black;
+  font-size         : 0.9vw;
+  text-decoration   : none;
+  transition        : all 0.5s ease;
+  animation-duration: 4s;
+}
+
+.buttonHero:hover {
+  background: white;
+  color     : black;
+}
+
+.heroRight {
+  flex      : 2;
+  max-height: 46vw
+}
+
+.fotoHero {
+  width     : auto;
+  max-height: 46vw;
+}
+
+/* IMAGE SLIDER */
+.mySlides {
+  display: none
+}
+
+.w3-left,
+.w3-right,
+.w3-badge {
+  cursor: pointer
+}
+
+.w3-badge {
+  height : 1vw;
+  padding: 0
+}
+
+@media (max-width: 768px) {
+  .heroDivision {
+    flex-direction: column;
+  }
+
+  .titleHero {
+    text-align : center;
+    font-weight: bold;
+    font-size  : 4vw;
+    padding    : 11vw 1vw 0vw 1vw;
+  }
+
+  .taglineHero {
+    text-align: center;
+    font-size : 3vw;
+  }
+
+  .heroRight {
+    display: none;
+  }
+
+  .buttonHero {
+    text-align        : center;
+    color             : white;
+    border-radius     : 50px;
+    box-shadow        : 0px 0.25vw #888888;
+    margin            : 0vw 10vw 5vw;
+    line-height       : 4vw;
+    background        : black;
+    font-size         : 3vw;
+    text-decoration   : none;
+    animation         : example 20s infinite;
+    animation-duration: 4s;
+  }
+
+  .buttonHero:hover {
+    background   : white;
+    color        : black;
+    outline-color: green;
+  }
+}
+
+/*========================================================================================================================*/
+
+/* OUR MENU ==============================================================================================================*/
+#menuDivision {
+  background-color: #FEE5C1;
+  padding         : 1vw 0vw 4vw;
+}
+
+.titleMenuLanding {
+  font-size      : 1.5vw;
+  display        : flex;
+  align-self     : center;
+  justify-content: center;
+  height         : 100%;
+  vertical-align : middle;
+  font-weight    : bold;
+  letter-spacing : -0.05vw;
+}
+
+.menuDivision {
+  display: flex;
+}
+
+.contentOfmenuDivision {
+  flex  : 1;
+  margin: 0vw 0vw 2vw 0vw;
+}
+
+.titleMenuDivision {
+  text-align     : center;
+  justify-content: center;
+}
+
+.fotoMenuDivision {
+  text-align     : center;
+  justify-content: center;
+  width          : 26vw;
+  /* height      : auto; */
+  display        : block;
+  margin-left    : auto;
+  margin-right   : auto;
+}
+
+@media (max-width: 768px) {
+  .titleMenuLanding {
+    text-align : center;
+    font-size  : 5vw;
+    font-weight: bold;
+  }
+
+  .menuDivision {
+    flex-direction: column;
+  }
+
+  .fotoMenuDivision {
+    text-align     : center;
+    justify-content: center;
+    width          : 95vw;
+    display        : block;
+    margin-left    : auto;
+    margin-right   : auto;
+  }
+}
+
+.buttonViewAll {
+  text-align        : center;
+  color             : white;
+  border-radius     : 50px;
+  box-shadow        : 0px 0.25vw #888888;
+  margin            : 0vw 40vw 0vw;
+  line-height       : 4vw;
+  background        : black;
+  font-size         : 0.9vw;
+  text-decoration   : none;
+  transition        : all 0.5s ease;
+  animation-duration: 4s;
+}
+
+.buttonViewAll:hover {
+  background   : white;
+  color        : black;
+  outline-color: green;
+}
+
+@media (max-width: 768px) {
+  .buttonViewAll {
+    text-align        : center;
+    color             : white;
+    border-radius     : 50px;
+    box-shadow        : 0px 0.25vw #888888;
+    margin            : 0vw 10vw 0vw;
+    line-height       : 6vw;
+    background        : black;
+    font-size         : 3vw;
+    text-decoration   : none;
+    animation         : example 20s infinite;
+    animation-duration: 4s;
+  }
+
+  .buttonViewAll:hover {
+    background   : white;
+    color        : black;
+    outline-color: green;
+  }
+}
+
+/*=========================================================================================================================*/
+
+/* REVIEW =================================================================================================================*/
+.kontainer {
+  width     : 100%;
+  height    : auto;
+  text-align: center;
+  z-index   : 999998;
+}
+
+.kontainerReview {
+  width  : 87.85vw;
+  height : 100%;
+  display: flex;
+  margin : 0 auto;
+  flex   : 1;
+  padding: 2vw 0 2vw;
+}
+
+.boxMenu {
+  width     : inherit;
+  text-align: center;
+  display   : table-cell;
+  padding   : 2.2vw 0;
+}
+
+.boxMenu h1 {
+  font-size  : 1.76vw;
+  font-family: 'Inter';
+  font-weight: bold;
+}
+
+.boxMenu p {
+  font-size  : 1.3vw;
+  font-family: 'Inter';
+}
+
+.profil {
+  width : 4.7vw;
+  height: 4.7vw;
+  margin: 1.46vw 0;
+}
+
+.bintang {
+  width : 10vw;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .boxMenu {
+    width           : inherit;
+    text-align      : center;
+    background-color: #EA5224;
+    display         : inline-block;
+    padding         : 2.2vw 0;
+    flex-direction  : column;
+  }
+}
+
+/*=========================================================================================================================*/
+
+/* LOKASI =================================================================================================================*/
+.lokasi-info {
+  max-width: 50vw;
+  width    : 50vw;
+  height   : auto;
+}
+
+#list-lokasi {
+  text-align      : center;
+  font-size       : medium;
+  border          : none;
+  color           : #FAFAFA;
+  border-radius   : 15px;
+  padding         : 0.9864583333333334vw 8vw;
+  background-color: grey;
+}
+
+.titleLokasiLanding {
+  font-size  : 1.5vw;
+  font-weight: bold;
+}
+
+.infoLokasiLanding {
+  font-size      : 1vw;
+  justify-content: center;
+  padding-right  : 1vw;
+}
+
+/* map */
+.lokasi-section {
+  display        : flex;
+  justify-content: center;
+  padding        : 4vw 0vw 4vw;
+}
+
+@media only screen and (max-width: 768px) {
+  .lokasi-info {
+    display      : block;
+    margin-left  : auto;
+    margin-bottom: 2vw;
+    text-align   : center;
+  }
+
+  #list-lokasi {
+    text-align      : center;
+    font-size       : medium;
+    border          : none;
+    color           : #FAFAFA;
+    border-radius   : 15px;
+    padding         : 2vh 8vw;
+    background-color: grey;
+  }
+
+  .titleLokasiLanding {
+    font-size  : 4vw;
+    font-weight: bold;
+  }
+
+  .infoLokasiLanding {
+    font-size      : 3vw;
+    text-align     : center;
+    justify-content: center;
+    padding-right  : 1vw;
+  }
+
+  /* map */
+  .lokasi-section {
+    display        : inline-block;
+    margin-left    : auto;
+    justify-content: center;
+    padding        : 4vw 0vw 4vw;
+  }
+}
+
+/*=========================================================================================================================*/
+
+/* SOCIAL MEDIA ===========================================================================================================*/
+.socialMedia {
+  margin   : auto;
+  height   : fit-content;
+  width    : 93vw;
+  /* border: 1px solid black; */
+}
+
+.socialMedia .gambar {
+  margin-left  : 3vw;
+  margin-bottom: 5vw;
+  width        : 46vw;
+  height       : 94vh;
+  float        : left;
+}
+
+.socialMedia .gambar .g1 img {
+  width       : 22vw;
+  height      : 44vh;
+  margin-right: 2vw;
+  float       : left;
+
+}
+
+.socialMedia .gambar .g2 img {
+  width  : 22vw;
+  height : 44vh;
+  display: inline-block;
+}
+
+.socialMedia .gambar .g3 img {
+  margin-top  : 4vh;
+  margin-right: 2vw;
+  width       : 22vw;
+  height      : 44vh;
+  float       : left;
+}
+
+.socialMedia .gambar .g4 img {
+  margin-top: 4vh;
+  width     : 22vw;
+  height    : 44vh;
+  display   : inline-block;
+}
+
+.socialMedia .folo {
+  width      : 19vw;
+  height     : fit-content;
+  margin-left: 61vw;
+}
+
+.socialMedia .folo h1 {
+  font-size    : 2.6vw;
+  font-weight  : bold;
+  font-family  : 'Inter', sans-serif;
+  margin-bottom: 5.2vh;
+  margin-top   : 5vh;
+}
+
+.moreBtn {
+  font-family                : "Roboto", sans-serif;
+  font-size                  : 2vh;
+  font-weight                : bold;
+  background                 : #191919;
+  width                      : 10vw;
+  padding                    : 1.3vw;
+  text-align                 : center;
+  text-decoration            : none;
+  text-transform             : uppercase;
+  color                      : #fff;
+  border-radius              : 3.2vw;
+  cursor                     : pointer;
+  box-shadow                 : 0 0 0.6vw rgba(0, 0, 0, 0.1);
+  -webkit-transition-duration: 0.3s;
+  transition-duration        : 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property        : box-shadow, transform;
+}
+
+.moreBtn:hover,
+.moreBtn:focus,
+.moreBtn:active {
+  box-shadow       : 0 0 1.3vw rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.1);
+  transform        : scale(1.1);
+}
+
+.daftarSosmed {
+  margin-bottom: 6.5vh;
+}
+
+.daftarSosmed ul {
+  list-style-type: none;
+  margin-left    : -1.9vw;
+}
+
+.daftarSosmed ul li a {
+  margin-top: 1.3vh;
+  font-size : 1.3vw;
+}
+
+.daftarSosmed ul li i {
+  height       : 3vw;
+  width        : 3vw;
+  margin-right : 1.3vw;
+  margin-bottom: 2.6vh;
+  font-size    : 2.6vw;
+}
+
+.daftarSosmed ul li :hover {
+  color     : orangered;
+  transition: all 0.5s ease;
+}
+
+@media (max-width: 768px) {
+
+  .socialMedia {
+    height: fit-content;
+  }
+
+  .socialMedia .gambar {
+    margin-left : 3vw;
+    margin-right: 3vw;
+    width       : auto;
+    height      : fit-content;
+    float       : none;
+  }
+
+  .socialMedia .gambar .g1 img {
+    width       : 41.9vw;
+    height      : 41.9vh;
+    margin-right: 2vw;
+    float       : left;
+  }
+
+  .socialMedia .gambar .g2 img {
+    width  : 41.9vw;
+    height : 41.9vh;
+    display: inline-block;
+  }
+
+  .socialMedia .gambar .g3 img {
+    margin-top  : 4vh;
+    margin-right: 2vw;
+    width       : 41.9vw;
+    height      : 41.9vh;
+    float       : left;
+  }
+
+  .socialMedia .gambar .g4 img {
+    margin-top: 4vh;
+    width     : 41.9vw;
+    height    : 41.9vh;
+    display   : inline-block;
+  }
+
+  .socialMedia .folo {
+    width : auto;
+    height: 50.5vh;
+    margin: 0;
+  }
+
+  .socialMedia .folo h1 {
+    margin-left  : 32.5vw;
+    font-size    : 5vw;
+    margin-bottom: 5vh;
+  }
+
+  .socialMedia .folo .daftarSosmed {
+    margin-left  : 32vw;
+    margin-bottom: 5vh;
+  }
+
+  .socialMedia .folo .daftarSosmed li a {
+    font-size: 2vw;
+  }
+
+  .socialMedia .folo .moreBtn {
+    margin-left: 34vw;
+    font-size  : 3vw;
+  }
+}
+
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  *zoom: 1;
+}
+
+/*========================================================================================================================*/
+
+/*BAGIAN FOOTER*/
+/*========================================================================================================================*/
+.bottomBar {
+  width           : auto;
+  height          : auto;
+  background-color: #24262b;
+  padding         : 2vw 4vw 0vw;
+}
+
+.titleFooter {
+  color      : white;
+  font-size  : 2vw;
+  font-weight: bold;
+}
+
+.containerFooter {
+  display: flex;
+  padding: 5vw 0;
+}
+
+.subContainerFooter {
+  flex     : 1;
+  font-size: 1.25vw;
+}
+
+@media (max-width: 768px) {
+  .containerFooter {
+    flex-direction: column;
+    text-align    : center;
+
+  }
+
+  .logoFooter {
+    display: none;
+  }
+}
+
+.logoFooter {
+  width           : 15vw;
+  height          : auto;
+  border-radius   : 5vw;
+  text-align      : center;
+  background-color: #888888;
+  z-index         : 999998;
+}
+
+.logoFooter h1 {
+  color      : white;
+  height     : 100%;
+  font-family: "Montserrat";
+  font-size  : 1.6vw;
+  font-weight: 200;
+}
+
+.logoFooter h1 span {
+  font-weight: 800;
+}
+
+.logoFooter :hover {
+  color     : red;
+  transition: all 0.5s ease;
+}
+
+.menuSubContainerFooters ul {
+  list-style-type: none;
+}
+
+.menuSubContainerFooters a {
+  height     : 20vw;
+  width      : 20vw;
+  text-align : center;
+  line-height: 40px;
+  color      : white;
+  transition : all 0.5s ease;
+  box-sizing : border-box;
+  font-weight: bold;
+}
+
+.subContainerFooter .menuSubContainerFooters a:hover {
+  color: red;
+}
+
+.menuSubContainerFooters ul li i {
+  height: 3vw;
+  width : 3vw;
+
+  background-color: #bbb;
+  border-radius   : 50%;
+  display         : inline-block;
+
+  vertical-align: middle;
+  text-align    : center;
+  position      : relative;
+  display       : table-cell;
+}
+
+#iconFooter {
+  top  : 1vw;
+  right: 0.5vw;
+}
+
+@media (max-width: 768px) {
+  .bottomBar {
+    align-self     : center;
+    justify-content: center;
+  }
+
+  .containerFooter {
+    flex-direction: column;
+    text-align    : center;
+  }
+
+  .logoFooter {
+    display: none;
+  }
+
+  .titleFooter {
+    display        : flex;
+    align-self     : center;
+    justify-content: center;
+    color          : white;
+    height         : 100%;
+    vertical-align : middle;
+    font-family    : "Montserrat";
+    font-size      : 5vw;
+    font-weight    : bold;
+  }
+
+  .menuSubContainerFooters ul {
+    list-style-type: none;
+    margin-right   : 8vw;
+    font-size      : 3vw;
+    font-weight    : 100;
+  }
+
+  #iconFooter {
+    top  : 0.5vw;
+    right: 0.5vw;
+  }
+}
