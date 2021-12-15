@@ -1,4 +1,4 @@
-*{
+body{
   margin: 0;
   padding: 0;
   font-family: 'Inter',sans-serif;
@@ -237,6 +237,10 @@ header{
 
 /* form for book-bow */
 
+form{
+  padding-bottom: 5vh;
+}
+
 .form-title{
   margin: 4vh;
 	text-transform: uppercase;
@@ -444,4 +448,8 @@ input:focus,textarea:focus,select:focus{
 
 .logoFooter a{
   color: white;
+}
+
+a{
+  text-decoration: none;
 }
