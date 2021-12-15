@@ -22,78 +22,70 @@ body{
 	align-items: center;
 }
 
-/* TODO */
 
-.header{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100vw;
-  background: #EA5224;
-  padding-top: 15px;
-  padding-bottom: 15px;
+/*BAGIAN HEADER*/
+/*========================================================================================================================*/
+
+header{
+  width: 100%;
 }
 
-@media only screen and (max-width: 600px) {
-  .header{
-    display: block;
-  }
-  
+.header {
+  overflow        : hidden;
+  background-color: #EA5224;
+  padding         : 20px;
+  box-shadow      : 0 5px 30px 0 rgba(0, 0, 0, 0.2);
 }
 
-.logoContainer{
-  display: flex;
-  align-self: center;
-  justify-content: center;
+.header a {
+  float          : left;
+  color          : white;
+  text-align     : center;
+  padding        : 12px;
+  text-decoration: none;
+  font-size      : 18px;
+  line-height    : 25px;
+  border-radius  : 4px;
 }
 
-.logoContainer h1 a{
-  color: inherit;
+.header-right a {
+  font-family : "Inter";
+  padding-left: 30px;
 }
 
-.logoContainer h1{
-  color: white;
-  height: 100%;
-  display: table-cell;
-  vertical-align: middle;
+.header .logo {
   font-family: "Montserrat";
-  font-size: 3vw+4vh;
-  font-weight: 200;
+  font-size  : 25px;
 }
 
-.logoContainer h1 span{
+.logo span {
   font-weight: 800;
 }
 
-.navigation{
-  display: flex;
-  align-self: center;
-  float: left;
+.header-right a:hover {
+  color: #ddd;
 }
 
-.navigation a{
-  /* height: 100%;
-  display: table;
-  float: left; */
-  padding: 0px 30px;
+.header-right {
+  float: right;
 }
 
-.navigation a:last-child{
-  padding-right: 10px;
-}
+@media screen and (max-width: 800px) {
+  header {
+    text-align: center;
+  }
 
-.navigation a li{
-  text-align: center;
-  height: 100%;
-  font-family: "Inter";
-  font-size: 16px;
-  color: white;
-}
-
-@media only screen and (max-width: 600px) {
-  .navigation{
+  .header a {
+    float  : none;
     display: block;
+  }
+
+  .header-right {
     float: none;
+  }
+
+  .header-right a {
+    padding: 7px;
   }
 }
   
@@ -307,5 +299,149 @@ input:focus,textarea:focus,select:focus{
 }
   
 
-/* footer rework */
+/*BAGIAN FOOTER*/
+/*========================================================================================================================*/
 
+.bottomBar {
+  width: 100%;
+  height          : auto;
+  background-color: #24262b;
+  padding         : 2vw 4vw 0vw;
+}
+
+.titleFooter {
+  color      : white;
+  font-size  : 2vw;
+  font-weight: bold;
+}
+
+.containerFooter {
+  display: flex;
+  padding: 5vw 0;
+}
+
+.subContainerFooter {
+  flex     : 1;
+  font-size: 1.25vw;
+}
+
+@media (max-width: 768px) {
+  .containerFooter {
+    flex-direction: column;
+    text-align    : center;
+
+  }
+
+  .logoFooter {
+    display: none;
+  }
+}
+
+.logoFooter {
+  width           : 15vw;
+  height          : auto;
+  border-radius   : 5vw;
+  text-align      : center;
+  background-color: #888888;
+  z-index         : 999998;
+}
+
+.logoFooter h1 {
+  color      : white;
+  height     : 100%;
+  font-family: "Montserrat";
+  font-size  : 1.6vw;
+  font-weight: 200;
+}
+
+.logoFooter h1 span {
+  font-weight: 800;
+}
+
+.logoFooter :hover {
+  color     : red;
+  transition: all 0.5s ease;
+}
+
+.menuSubContainerFooters ul {
+  list-style-type: none;
+}
+
+.menuSubContainerFooters a {
+  height     : 20vw;
+  width      : 20vw;
+  text-align : center;
+  line-height: 40px;
+  color      : white;
+  transition : all 0.5s ease;
+  box-sizing : border-box;
+  font-weight: bold;
+}
+
+.subContainerFooter .menuSubContainerFooters a:hover {
+  color: red;
+}
+
+.menuSubContainerFooters ul li i {
+  height: 3vw;
+  width : 3vw;
+
+  background-color: #bbb;
+  border-radius   : 50%;
+  display         : inline-block;
+
+  vertical-align: middle;
+  text-align    : center;
+  position      : relative;
+  display       : table-cell;
+}
+
+#iconFooter {
+  top  : 1vw;
+  right: 0.5vw;
+}
+
+@media (max-width: 768px) {
+  .bottomBar {
+    /* display        : flex; */
+    align-self     : center;
+    justify-content: center;
+  }
+
+  .containerFooter {
+    flex-direction: column;
+    text-align    : center;
+  }
+
+  .logoFooter {
+    display: none;
+  }
+
+  .titleFooter {
+    display        : flex;
+    align-self     : center;
+    justify-content: center;
+    color          : white;
+    height         : 100%;
+    vertical-align : middle;
+    font-family    : "Montserrat";
+    font-size      : 5vw;
+    font-weight    : bold;
+  }
+
+  .menuSubContainerFooters ul {
+    list-style-type: none;
+    margin-right   : 8vw;
+    font-size      : 3vw;
+    font-weight    : 100;
+  }
+
+  #iconFooter {
+    top  : 0.5vw;
+    right: 0.5vw;
+  }
+}
+
+.logoFooter a{
+  color: white;
+}
