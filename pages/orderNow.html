@@ -5,34 +5,43 @@
     <title>Delivery Service</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Ini buat link font kaya di Figma pack -->
+    <link rel="stylesheet" href="../styles/orderNowStyle.css">
+    <!-- FAVICON -->
+    <link href="../photo/favicon-fix.png" rel="shorcut icon">
+    <!-- CSS -->
+    <!-- JavaScript -->
+    <script src="jquery-3.5.1.min.js"></script>
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <!-- IMPORT FONT -->
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,800" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
-    <link rel="stylesheet" href="orderNowStyle.css">
+    <!-- IMPORT SLIDES -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   </head>
 
   <body>
-    <!-- Ini header sementara dari saya bang,
-    gabisa responsive juga sih
-    tapi bisa di klik-klik -->
-    <div class="header">
-      <div class="innerHeader">
-        <div class="logoContainer">
-          <h1><a href="../index.html">SUSHI</a><span><a href="../index.html">MANTAP</a></span></h1>
+    <!-- header area start -->
+    <header>
+      <div class="header">
+        <a class="logo" href="../index.html">SUSHI<span>MANTAP</span></a>
+        <div class="header-right">
+          <a href="../index.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="layanan.html">Layanan</a>
+          <a href="lokasi.html">Lokasi</a>
+          <a href="contact.html">Contact</a>
+          <a href="aboutUs.html">About Us</a>
         </div>
-        <ul class="navigation">
-          <a class="home" href="../index.html"><li>Home</li></a>
-          <a class="menu" href="../menu.html"><li>Menu</li></a>
-          <a class="layanan" href="../layanan.html"><li>Layanan</li></a>
-          <a class="promosi" href="../layanan.html"><li>Promosi</li></a>
-          <a class="lokasi" href="../lokasi.html"><li>Lokasi</li></a>
-          <a class="aboutUs" href="../aboutUs.html"><li>About Us</li></a>
-        </ul>
       </div>
-    </div>
+    </header>
+    <!-- header area end -->
 
+    <!-- AREA MAIN -->
     <main>
+      <div class="box" style="position: relative;">
       <h1 class="heading1">DELIVERY SERVICE</h1>
-      <p class="penjelasan">Lorem ipsum dolor sit ore</p>
+      <p class="penjelasan">Pilih Layanan yang Ingin Digunakan</p>
         <p class="logoLogo">
           <figure class="gambar">
             <a href="https://www.gojek.com/gofood/"><img src="https://i.pinimg.com/originals/5a/01/cb/5a01cb71a5cb68ab7847eb0c68bcc384.png" alt="goFood" id="gojek"></a>
@@ -41,27 +50,42 @@
           </figure>
         </p>
       <p class="kontak">Atau kontak kami pada +1234567890</p>
+      <a href="layanan.html"><img src="../photo/backButton.png" class="backButton"></a>
+      </div>
     </main>
+    <!-- AREA MAIN END -->
+
+    <!-- footer area start -->
+    <footer class="bottomBar">
+        <div class="titleFooter">About Us</div>
+        <div class="containerFooter">
+            <div class="subContainerFooter">
+                <div class="logoFooter">
+                    <h1><a href="index.html">SUSHI</a><span><a href="index.html">MANTAP</a></span></h1>
+                </div>
+            </div>
+            <div class="subContainerFooter">
+                <div class="menuSubContainerFooters">
+                    <ul style="margin-top: 2.5vw;">
+                        <li><a href="#">Our Menu</a></li>
+                        <li><a href="#">Location</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subContainerFooter">
+                <div class="menuSubContainerFooters">
+                    <ul>
+                        <li><a href="#"><i class="fab fa-instagram" id="iconFooter"></i>@sushimantap</a></li>
+                        <li><a href="#"><i class="fab fa-facebook-f" id="iconFooter"></i>@sushimantap</a></li>
+                        <li><a href="#"><i class="fab fa-twitter" id="iconFooter"></i>@sushimantap</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer area end -->
   </body>
 
-  <footer class="footer">
-    <div class="innerFooter">
-      <div class="kiriFooter">
-
-        <div class="listNama">
-
-        </div>
-      </div>
-      <section class="kananFooter">
-        <div class="sosmedTitle">
-
-        </div>
-        <div class="sosmed">
-          <li><a class="instagram" href="https://www.instagram.com/">Instagram : @sushimantap</a></li>
-          <li><a class="facebook" href="https://www.facebook.com/">Facebook  : Sushi Mantap</a></li>
-          <li><a class="twitter" href="https://twitter.com/">Twitter   : @sushimantap</a></li>
-        </div>
-      </section>
-    </div>
-  </footer>
 </html>

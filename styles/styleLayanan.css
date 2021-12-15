@@ -21,52 +21,63 @@ a {
 /*========================================================================================================================*/
 
 .header {
-  overflow: hidden;
+  overflow        : hidden;
   background-color: #EA5224;
-  padding: 20px;
-  box-shadow: 0 5px 30px 0 rgba(0,0,0,0.2);
+  padding         : 20px;
+  box-shadow      : 0 5px 30px 0 rgba(0, 0, 0, 0.2);
 }
 
-.header a{
-  float: left;
-  color: white;
-  text-align: center;
-  padding: 12px;
+.header a {
+  float          : left;
+  color          : white;
+  text-align     : center;
+  padding        : 12px;
   text-decoration: none;
-  font-size: 18px;
-  line-height: 25px;
-  border-radius: 4px;
+  font-size      : 18px;
+  line-height    : 25px;
+  border-radius  : 4px;
 }
 
-.header-right a{
-  font-family: "Inter";
+.header-right a {
+  font-family : "Inter";
   padding-left: 30px;
 }
 
-.header .logo{
+.header .logo {
   font-family: "Montserrat";
-  font-size: 25px;
+  font-size  : 25px;
 }
 
-.logo span {font-weight: 800;}
+.logo span {
+  font-weight: 800;
+}
 
-.header-right a:hover {color: #ddd;}
+.header-right a:hover {
+  color: #ddd;
+}
 
-.header-right {float: right;}
+.header-right {
+  float: right;
+}
 
 @media screen and (max-width: 800px) {
-  header{text-align: center;}
+  header {
+    text-align: center;
+  }
 
-  .header a{
-    float: none;
+  .header a {
+    float  : none;
     display: block;
   }
 
-  .header-right {float: none;}
+  .header-right {
+    float: none;
+  }
 
-  .header-right a{padding: 7px;}
+  .header-right a {
+    padding: 7px;
+  }
 }
-
 
 /*========================================================================================================================*/
 
@@ -83,20 +94,17 @@ a {
 }
 
 .containerMenu {
-  display      : flex;
-  max-width    : 80%;
-  left         : 50px;
-  right        : 50px;
-  padding      : 0px 20px 20px 20px;
-  border-radius: 10px;
-  margin       : 0 auto;
-  margin-bottom: 2vw;
+  display         : flex;
+  max-width       : 80%;
+  left            : 50px;
+  right           : 50px;
+  padding         : 0px 20px 0px;
+  border-radius   : 10px;
+  margin          : 0 auto;
+  /* margin-bottom: 2vw; */
 }
 
 .boxMenu {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
   flex-grow: 1;
   padding  : 0 1% 1% 1%;
   max-width: 33.3%;
@@ -129,23 +137,23 @@ a {
 
 .button {
   text-align     : center;
-  color          : black;
+  color          : white;
   border-radius  : 20px;
   box-shadow     : 0px 0.25vw #888888;
   margin         : 10px 20px 10px;
   padding-top    : 0.5vw;
   padding-bottom : 0.5vw;
-  background     : #fff;
+  background     : black;
   bottom         : 0;
   font-size      : 1.25vw;
   text-decoration: none;
   overflow       : none;
+  transition     : all 0.5s ease;
 }
 
 .button:hover {
-  background   : grey;
-  color        : white;
-  outline-color: green;
+  background: white;
+  color     : black;
 }
 
 .backButton {
@@ -159,6 +167,18 @@ a {
   border       : 5px solid wheat;
   border-radius: 50px;
   margin       : 2vw auto;
+}
+
+@media (min-width: 768px) {
+  #selectionButton1 {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  #selectionButton2 {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {

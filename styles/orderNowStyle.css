@@ -1,0 +1,301 @@
+*{
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+/*BAGIAN HEADER*/
+/*========================================================================================================================*/
+
+.header {
+  overflow: hidden;
+  background-color: #EA5224;
+  padding: 20px;
+  box-shadow: 0 5px 30px 0 rgba(0,0,0,0.2);
+}
+
+.header a{
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header-right a{
+  font-family: "Inter";
+}
+
+.header .logo{
+  font-family: "Montserrat";
+  font-size: 25px;
+}
+
+.logo span {font-weight: 800;}
+
+.header-right {float: right;}
+
+.header-right a:hover {color: #ddd;}
+
+@media screen and (max-width: 800px) {
+  header{text-align: center;}
+
+  .header a{
+    float: none;
+    display: block;
+  }
+
+  .header-right {float: none;}
+
+  .header-right a{padding: 7px;}
+}
+
+/*========================================================================================================================*/
+
+.heading1{
+  font-weight: bolder;
+  font-family: "Inter";
+  text-align: center;
+  font-weight: 1000px;
+  padding-top: 4.39vw;
+  padding-bottom: 5.12vw;
+  font-size: 2.2vw;
+}
+
+.foodDelivery{
+  height: 100%;
+  text-align: center;
+}
+
+.foodDelivery a{
+  height: 100%;
+  display: table;
+  float: left;
+  padding: 0px 30px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.gambar a{
+  margin: 0 20px;
+}
+
+.gambar a : hover{
+  color : wheat;
+  transition : all 0.5s ease;
+}
+
+#shopee{
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  margin-bottom: 4.39vw;
+}
+
+#gojek{
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  margin-bottom: 4.39vw;
+}
+
+#grab{
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  margin-bottom: 4.39vw;
+}
+
+.logoLogo{
+  text-align: justify;
+  margin: 0 auto;
+}
+
+.gambar{
+  text-align: center;
+}
+
+.penjelasan{
+  text-align: center;
+  font-family: "Inter";
+  padding-bottom: 60px;
+  font-size: 2.2vw;
+}
+
+.kontak{
+  text-align: center;
+  font-family: "Inter";
+  font-size: 2.2vw;
+  padding-bottom: 100px;
+}
+
+.backButton {
+  position: absolute;
+  display: block;
+  width: 4vw;
+  height: 4vw;
+  bottom: 0vw;
+  right: 3vw;
+  background: wheat;
+  border: 1vw solid wheat;
+  border-radius: 50px;
+  margin: 2vw auto;
+  float: right;
+  box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+}
+
+@media (max-width: 800px) {
+  .gambar a{
+    display: block;
+    padding: 0;
+  }
+}
+
+/*BAGIAN FOOTER*/
+
+.bottomBar {
+  width           : auto;
+  height          : auto;
+  background-color: #24262b;
+  padding         : 2vw 4vw 0vw;
+}
+
+.titleFooter {
+  color      : white;
+  font-size  : 2vw;
+  font-weight: bold;
+}
+
+.containerFooter {
+  display: flex;
+  padding: 5vw 0;
+}
+
+.subContainerFooter {
+  flex     : 1;
+  font-size: 1.25vw;
+}
+
+@media (max-width: 768px) {
+  .containerFooter {
+    flex-direction: column;
+    text-align    : center;
+
+  }
+
+  .logoFooter {
+    display: none;
+  }
+}
+
+.logoFooter {
+  width           : 15vw;
+  height          : auto;
+  border-radius   : 5vw;
+  text-align      : center;
+  background-color: #888888;
+  z-index         : 999998;
+}
+
+.logoFooter h1 {
+  color      : white;
+  height     : 100%;
+  font-family: "Montserrat";
+  font-size  : 1.6vw;
+  font-weight: 200;
+}
+
+.logoFooter h1 span {
+  font-weight: 800;
+}
+
+.logoFooter :hover {
+  color     : #EA5224;
+  transition: all 0.5s ease;
+}
+
+.menuSubContainerFooters ul {
+  list-style-type: none;
+}
+
+.menuSubContainerFooters a {
+  height     : 20vw;
+  width      : 20vw;
+  text-align : center;
+  line-height: 40px;
+  color      : white;
+  transition : all 0.5s ease;
+  box-sizing : border-box;
+  font-weight: bold;
+}
+
+.subContainerFooter .menuSubContainerFooters a:hover {
+  color: #FF9A60;
+}
+
+.menuSubContainerFooters ul li i {
+  height: 3vw;
+  width : 3vw;
+
+  background-color: #bbb;
+  border-radius   : 50%;
+  display         : inline-block;
+
+  vertical-align: middle;
+  text-align    : center;
+  position      : relative;
+  display       : table-cell;
+}
+
+#iconFooter {
+  top  : 1vw;
+  right: 0.5vw;
+}
+
+@media (max-width: 800px) {
+  .bottomBar {
+    /* display        : flex; */
+    align-self     : center;
+    justify-content: center;
+  }
+
+  .containerFooter {
+    flex-direction: column;
+    text-align    : center;
+  }
+
+  .logoFooter {
+    display: none;
+  }
+
+  .titleFooter {
+    display        : flex;
+    align-self     : center;
+    justify-content: center;
+    color          : white;
+    height         : 100%;
+    vertical-align : middle;
+    font-family    : "Montserrat";
+    font-size      : 5vw;
+    font-weight    : bold;
+  }
+
+  .menuSubContainerFooters ul {
+    list-style-type: none;
+    margin-right   : 8vw;
+    font-size      : 3vw;
+    font-weight    : 100;
+  }
+
+  #iconFooter {
+    top  : 0.5vw;
+    right: 0.5vw;
+  }
+}
