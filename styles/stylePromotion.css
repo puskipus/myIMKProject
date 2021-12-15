@@ -1,0 +1,366 @@
+body {
+    background-color: #F4F4F4;
+    background-size : cover;
+    margin          : 0;
+    padding         : 0;
+  
+    line-height    : 1.5;
+    font-family    : 'Inter', sans-serif;
+    text-decoration: none;
+  
+    -webkit-background-size: cover;
+    -moz-background-size   : cover;
+    -o-background-size     : cover;
+  }
+
+.box {
+  height: auto;
+  width : auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*BAGIAN HEADER*/
+/*========================================================================================================================*/
+
+.topBar {
+    display: flex;
+  }
+  
+  .header {
+    display    : flex;
+    align-items: center;
+    width      : 100vw;
+    background : #EA5224;
+  }
+  
+  .logoContainer {
+    height      : 100%;
+    padding-left: 13.5vw;
+  
+    display        : flex;
+    align-self     : center;
+    justify-content: center;
+  }
+  
+  .logoContainer h1 {
+    color         : white;
+    height        : 100%;
+    display       : table-cell;
+    vertical-align: middle;
+    font-family   : "Montserrat";
+    font-size     : 1.6vw;
+    font-weight   : 200;
+  }
+  
+  .logoContainer h1 span {
+    font-weight: 800;
+  }
+  
+  .logoContainer h1 a {
+    color: inherit;
+  }
+  
+  .logoContainer :hover {
+    color     : gainsboro;
+    transition: all 0.5s ease;
+  }
+  
+  .navigation {
+    display   : flex;
+    align-self: center;
+    float     : left;
+  }
+  
+  .navigation a {
+    height : 100%;
+    padding: 0px 30px;
+  }
+  
+  .navigation a:last-child {
+    padding-right: 10px;
+  }
+  
+  .navigation a li {
+    text-align : center;
+    height     : 100%;
+    font-family: "Inter";
+    font-size  : 0.8vw;
+    color      : white;
+  }
+  
+  /* durung mlaku */
+  .navigation ul a li :hover {
+    color     : gainsboro;
+    transition: all 0.5s ease;
+  }
+  
+  #home {
+    margin-left: 25vw;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .header {
+      display: block;
+    }
+  
+    .logoContainer {
+      height : 100%;
+      padding: 0;
+  
+      display        : flex;
+      align-self     : center;
+      justify-content: center;
+    }
+  
+    .logoContainer h1 {
+      color         : white;
+      height        : 100%;
+      display       : table-cell;
+      vertical-align: middle;
+      font-family   : "Montserrat";
+      font-size     : 3vw;
+      font-weight   : 200;
+    }
+  
+    .navigation {
+      display: block;
+      float  : none;
+    }
+  
+    .navigation a li {
+      text-align     : center;
+      justify-content: center;
+      height         : 100%;
+      font-family    : "Inter";
+      font-size      : 3vw;
+      color          : white;
+      margin-right   : 8vw;
+    }
+  }
+
+  /*========================================================================================================================*/
+  
+  /*BAGIAN MAIN*/
+  /*========================================================================================================================*/
+
+  .content {
+      /* border             : 1px solid black; */
+      /* height                : 78.6vh; */
+      position: relative;
+      width: 100%;
+      margin: 0 auto;
+      height: fit-content;
+  }
+
+  .content img {
+      width: 100%;
+  }
+
+  .content>img {
+    opacity: 0.6;
+  }
+
+  .firstTxt {
+    font-family     : 'Inter', sans-serif;
+    position: absolute;
+    top: 21%;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.6vw;
+  }
+
+  .secondTxt {
+    font-family     : 'Inter', sans-serif;
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    text-align: center;
+    font-size: 1.3vw;
+  }
+
+  .txtField {
+    position: absolute;
+    top: 52%;
+    left: 20%;
+    height: auto;
+    width: 59.2vw;
+    border-radius: 5px;
+}
+
+.submitBtn {
+  position: absolute;
+  top: 65%;
+  left: 45%;
+  font-family: "Roboto", sans-serif;
+  margin: auto;
+  font-size: 1.2vw;
+  font-weight: bold;
+  background-color: #191919;
+  width: 10vw;
+  padding: 1.3vw;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 3.2vw;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
+}
+
+.submitBtn:hover, .submitBtn:focus, .submitBtn:active {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+  /*========================================================================================================================*/
+  
+  /*BAGIAN FOOTER*/
+  /*========================================================================================================================*/
+  .bottomBar {
+    width           : auto;
+    height          : auto;
+    background-color: #24262b;
+    padding         : 2vw 4vw 0vw;
+  }
+  
+  .titleFooter {
+    color      : white;
+    font-size  : 2vw;
+    font-weight: bold;
+  }
+  
+  .containerFooter {
+    display: flex;
+    padding: 5vw 0;
+  }
+  
+  .subContainerFooter {
+    flex     : 1;
+    font-size: 1.25vw;
+  }
+  
+  @media (max-width: 768px) {
+    .containerFooter {
+      flex-direction: column;
+      text-align    : center;
+  
+    }
+  
+    .logoFooter {
+      display: none;
+    }
+  }
+  
+  .logoFooter {
+    width           : 15vw;
+    height          : auto;
+    border-radius   : 5vw;
+    text-align      : center;
+    background-color: #888888;
+    z-index         : 999998;
+  }
+  
+  .logoFooter h1 {
+    color      : white;
+    height     : 100%;
+    font-family: "Montserrat";
+    font-size  : 1.6vw;
+    font-weight: 200;
+  }
+  
+  .logoFooter h1 span {
+    font-weight: 800;
+  }
+  
+  .logoFooter :hover {
+    color     : red;
+    transition: all 0.5s ease;
+  }
+  
+  .menuSubContainerFooters ul {
+    list-style-type: none;
+  }
+  
+  .menuSubContainerFooters a {
+    height     : 20vw;
+    width      : 20vw;
+    text-align : center;
+    line-height: 40px;
+    color      : white;
+    transition : all 0.5s ease;
+    box-sizing : border-box;
+    font-weight: bold;
+  }
+  
+  .subContainerFooter .menuSubContainerFooters a:hover {
+    color: red;
+  }
+  
+  .menuSubContainerFooters ul li i {
+    height: 3vw;
+    width : 3vw;
+  
+    background-color: #bbb;
+    border-radius   : 50%;
+    display         : inline-block;
+  
+    vertical-align: middle;
+    text-align    : center;
+    position      : relative;
+    display       : table-cell;
+  }
+  
+  #iconFooter {
+    top  : 1vw;
+    right: 0.5vw;
+  }
+  
+  @media (max-width: 768px) {
+    .bottomBar {
+      /* display        : flex; */
+      align-self     : center;
+      justify-content: center;
+    }
+  
+    .containerFooter {
+      flex-direction: column;
+      text-align    : center;
+    }
+  
+    .logoFooter {
+      display: none;
+    }
+  
+    .titleFooter {
+      display        : flex;
+      align-self     : center;
+      justify-content: center;
+      color          : white;
+      height         : 100%;
+      vertical-align : middle;
+      font-family    : "Montserrat";
+      font-size      : 5vw;
+      font-weight    : bold;
+    }
+  
+    .menuSubContainerFooters ul {
+      list-style-type: none;
+      margin-right   : 8vw;
+      font-size      : 3vw;
+      font-weight    : 100;
+    }
+  
+    #iconFooter {
+      top  : 0.5vw;
+      right: 0.5vw;
+    }
+  }
