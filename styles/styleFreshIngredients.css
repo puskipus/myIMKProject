@@ -136,6 +136,7 @@ a {
   border       : 1vw solid wheat;
   border-radius: 50px;
   margin       : 2vw auto;
+  box-shadow   : 0 5px 10px 0 rgba(0,0,0,0.2);
 }
 
 @media (max-width: 768px) {

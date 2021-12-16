@@ -267,7 +267,7 @@ form{
 }
 
 
-input[type=text],input[type=date],textarea,select{ /* forms */
+input[type=text],input[type=date],input[type=email],textarea,select{ /* forms */
 	width: 100%;
   padding: 8px;
   border-radius: 5px;
@@ -453,4 +453,49 @@ input:focus,textarea:focus,select:focus{
 
 a{
   text-decoration: none;
+}
+
+.button {
+  text-align     : center;
+  color          : white;
+  border-radius  : 20px;
+  box-shadow     : 0px 0.25vw #888888;
+  margin         : 10px 20px 10px;
+  padding-top    : 0.5vw;
+  padding-bottom : 0.5vw;
+  background     : black;
+  bottom         : 0;
+  font-size      : 1.25vw;
+  text-decoration: none;
+  overflow       : none;
+  transition     : all 0.5s ease;
+}
+
+.button:hover {
+  background: white;
+  color     : black;
+}
+
+.back-button-container{
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  margin-right: 2vw;
+}
+
+.backButton {
+  width        : 2vw;
+  height       : 2vw;
+  background   : wheat;
+  border: 1vw solid wheat;
+  border-radius: 50px;
+  margin       : 2vw auto;
+  box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+}
+
+
+@media (min-width: 768px) {
+  #selectionButton1 {
+    display: none;
+  }
 }

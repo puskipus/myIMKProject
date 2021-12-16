@@ -24,7 +24,7 @@
                 <a href="menu.html">Menu</a>
                 <a href="layanan.html">Layanan</a>
                 <a href="lokasi.html">Lokasi</a>
-                <a href="contact.html">Contact</a>
+                <a href="promotion.html">Promosi</a>
                 <a href="aboutUs.html">About Us</a>
             </div>
         </div>
@@ -43,7 +43,7 @@
 
         <div class="form-div">
             <label for="phonenumber">Phone Number</label>
-            <input type="text" name="phonenumber" id="phonenumber">
+            <input type="number" name="phonenumber" id="phonenumber">
         </div>
 
         <div class="form-div">
@@ -54,7 +54,7 @@
         <div class="form-div">
             <label for="email">Email
             </label>
-            <input type="text" name="email" id="email">
+            <input type="email" name="email" id="email">
         </div>
 
         <div class="form-div">
@@ -73,11 +73,6 @@
         </div>
 
         <div class="form-div">
-            <label for="email">Email</label>
-            <input type="text" name="email" id="email">
-        </div>
-
-        <div class="form-div">
             <label for="notes">Notes</label>
             <textarea name="comment" form="usrform" placeholder="Enter text here..."></textarea>
         </div>
@@ -85,6 +80,9 @@
 
         <input type="submit" value="Submit">
     </form>
+    <div class="back-button-container">
+      <a href="layanan.html"><img src="../photo/backButton.png" class="backButton"></a>
+    </div>
     <script>
         const form = document.querySelector(".book-now")
             .addEventListener("submit", () => 
