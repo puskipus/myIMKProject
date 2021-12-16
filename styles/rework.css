@@ -111,6 +111,7 @@ header{
   background-color: lightgrey;
   /* padding: 2vw 4vw; */
   padding: 20px;
+  cursor: pointer;
 }
 
 
@@ -267,7 +268,7 @@ form{
 }
 
 
-input[type=text],input[type=date],input[type=email],textarea,select{ /* forms */
+input[type=text],input[type=date],input[type=email],input[type=number],textarea,select{ /* forms */
 	width: 100%;
   padding: 8px;
   border-radius: 5px;

@@ -390,7 +390,7 @@ a {
   color           : #FAFAFA;
   border-radius   : 15px;
   padding         : 0.9864583333333334vw 8vw;
-  background-color: grey;
+  background-color: #24262b;
 }
 
 .titleLokasiLanding {
@@ -790,4 +790,9 @@ a {
     top  : 0.5vw;
     right: 0.5vw;
   }
+}
+
+.lokasi-headings:hover{
+  color: #EA5224;
+  transition: all 0.5s ease;
 }
