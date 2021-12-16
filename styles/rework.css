@@ -310,13 +310,14 @@ input:focus,textarea:focus,select:focus{
   width: 100%;
   height          : auto;
   background-color: #24262b;
-  padding         : 2vw 4vw 0vw;
+  /* padding         : 2vw 4vw 0vw; */
 }
 
 .titleFooter {
   color      : white;
   font-size  : 2vw;
   font-weight: bold;
+  padding    : 5px 10px;
 }
 
 .containerFooter {
